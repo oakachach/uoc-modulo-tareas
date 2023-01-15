@@ -1,21 +1,70 @@
-# Propuesta de módulo de gestión de PEC en el Campus Virtual de la UOC.
+# Redux Fundamentals Tutorial Example
 
-Este proyecto consiste en una maqueta para visualizar lo que podría ser una aplicación para gestionar las tareas de cada alumno durante el semestre.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Enlace al entorno de pruebas para poder probar el proyecto](https://u0tbt4.csb.app/)
+## Available Scripts
 
-## Funciones añadidas
+In the project directory, you can run:
 
-Las tareas se cargan una vez al semestre mediante los JSON de matrícula y tareasSemestre.
+### `yarn start`
 
-Las tareas aparecen en pantalla.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Las tareas se pueden filtrar por asignatura o por estado (completado, pendiente o fuera de plazo).
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Las tareas se pueden marcar como completadas.
+### `yarn test`
 
-## Funciones que faltan
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Integración con backend para poder guardar el estado de las tareas en la base de datos MongoDB.
+### `yarn build`
 
-Poder filtrar las tareas según el mes o tener una vista semestral de todas las tareas.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

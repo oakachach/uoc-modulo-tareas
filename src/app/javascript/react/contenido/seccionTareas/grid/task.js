@@ -10,8 +10,6 @@ export const Task = (props) => {
   const [visibility, setVisibility] = useState("block"); // Block o none.
 
   const handleChange = (checked) => {
-    /* Aquí le restamos o sumamosel valor de el número de alumnos. */
-    //checked === true ? setStatus("completed") : setStatus("pending");
     const enrolledStudents =
       asignaturasSemestre[props.info.subjectID].enrolledStudents;
     const incrementRate = 1 / enrolledStudents;
@@ -20,12 +18,24 @@ export const Task = (props) => {
       setStatus("completed");
       props.info.successRate += incrementRate;
       props.info.workingRate -= incrementRate;
+      props.info.subtasks.forEach((item) => {
+        if (item.status !== "completed") {
+          item.successRate += incrementRate;
+          item.workingRate -= incrementRate;
+        }
+      });
       return;
     }
     setStatus("pending");
     if (props.info.successRate > 0) {
       props.info.successRate -= incrementRate;
       props.info.workingRate += incrementRate;
+      props.info.subtasks.forEach((item) => {
+        if (item.status !== "completed") {
+          item.successRate -= incrementRate;
+          item.workingRate += incrementRate;
+        }
+      });
     }
   };
 
@@ -155,12 +165,14 @@ const SubtaskHeader = () => {
 };
 
 const Subtask = ({ subtaskInfo, taskState }) => {
-  //const [status, setStatus] = useState(subtaskInfo.status);
   const [status, setStatus] = useState(
     taskState === "completed" ? taskState : subtaskInfo.status
   );
   const [checked, setChecked] = useState(checkInitialState(status));
 
+  const [isDisabled, setDisabled] = useState(checkIfTaskIsCompleted(taskState));
+
+  /* Cuando marcamos o desmarcamos la tarea. */
   const handleChange = (value) => {
     setChecked(value);
     const taskID = subtaskInfo.taskID;
@@ -170,20 +182,20 @@ const Subtask = ({ subtaskInfo, taskState }) => {
 
     if (value === true) {
       setStatus("completed");
+      console.log("entro true");
       subtaskInfo.status = "completed";
       subtaskInfo.successRate += incrementRate;
       subtaskInfo.workingRate -= incrementRate;
       return;
     }
     setStatus("pending");
-    if (subtaskInfo.successRate > 0) {
-      subtaskInfo.successRate -= incrementRate;
-      subtaskInfo.workingRate += incrementRate;
-      subtaskInfo.status = "pending";
-    }
+    console.log("entro false");
+    subtaskInfo.successRate -= incrementRate;
+    subtaskInfo.workingRate += incrementRate;
+    subtaskInfo.status = "pending";
   };
 
-  // Se triggerea cuando cambia o el taskState o el status de la propia subtarea.
+  // Cuando cambia el taskState o el status de la propia subtarea.
   useEffect(() => {
     const taskID = subtaskInfo.taskID;
     const subjectID = tareasSemestre[taskID].subjectID;
@@ -191,20 +203,17 @@ const Subtask = ({ subtaskInfo, taskState }) => {
     const incrementRate = 1 / enrolledStudents;
 
     if (taskState === "completed") {
-      setStatus(taskState);
+      setStatus("completed");
       setChecked(true);
-      subtaskInfo.successRate += incrementRate;
-      subtaskInfo.workingRate -= incrementRate;
+      setDisabled(true);
       return;
     }
     setStatus(subtaskInfo.status);
     setChecked(subtaskInfo.status === "completed" ? true : false);
-    if (subtaskInfo.successRate > 0) {
-      subtaskInfo.successRate -= incrementRate;
-      subtaskInfo.workingRate += incrementRate;
-    }
-  }, [taskState, subtaskInfo, status]);
+    setDisabled(false);
+  }, [taskState, subtaskInfo]);
 
+  /* Cuando cambia la fecha de la subtarea. */
   useEffect(() => {
     const currentDate = new Date();
     const taskDate = new Date(subtaskInfo.date);
@@ -214,6 +223,7 @@ const Subtask = ({ subtaskInfo, taskState }) => {
     }
   }, [subtaskInfo.date, status]);
 
+  /* Renderizamos el componente. */
   return (
     <div className="subtask-info">
       <SubtaskDate status={status} date={subtaskInfo.date} />
@@ -223,6 +233,7 @@ const Subtask = ({ subtaskInfo, taskState }) => {
           type="checkbox"
           checked={checked}
           onChange={(e) => handleChange(e.target.checked)}
+          disabled={isDisabled}
         />
         <a title="Ver detalles de la tarea" className="bolder">
           {subtaskInfo.name}
@@ -280,4 +291,8 @@ const checkInitialState = (initialStatus) => {
   initialStatus === "completed" ? (checked = true) : (checked = false);
 
   return checked;
+};
+
+const checkIfTaskIsCompleted = (taskState) => {
+  return taskState === "completed" ? true : false;
 };
