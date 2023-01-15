@@ -1,0 +1,12 @@
+:root {
+  --content-width: 1180px;
+  --home-button-width: 5rem;
+  --menu-button-width: 9rem;
+  --menu-button-height: 5rem;
+  --azul-claro-uoc: #73edff;
+  --azul-oscuro-uoc: #000078;
+  --rojo-uoc: #ff7d87;
+  --gris-claro-uoc: #f0f0f0;
+  --gris-medio-uoc: #d0d0d0;
+  --gris-oscuro-uoc: #878787;
+}

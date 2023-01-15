@@ -1,0 +1,80 @@
+/* Media query para cuando la pantalla mida menos de 500px */
+
+@media screen and (max-width: 500px) {
+  :root {
+    --content-width: 310px;
+    --home-button-width: 5rem;
+    --menu-button-width: 9rem;
+    --menu-button-height: 5rem;
+  }
+
+  #servicio-atencion {
+    width: 2.5em;
+  }
+
+  #servicio-atencion > img {
+    width: 3em;
+    height: 3em;
+  }
+
+  #logo-uoc > img {
+    width: 140px;
+    position: relative;
+    top: 2px;
+  }
+
+  #perfil {
+    width: 8em;
+    padding-top: 0;
+  }
+
+  #nombre-enlaces {
+    width: 100%;
+  }
+
+  /* Icono de la puerta. */
+  #perfil-nombre > a > img {
+    width: 2em;
+    height: 2em;
+    margin-left: 4px;
+    margin-right: 7px;
+  }
+
+  /* Icono del correo y grupos. */
+  #perfil-enlaces-derecha > a > img {
+    width: 2em;
+    height: 2em;
+  }
+
+  /* Icono del símbolo +*/
+  #perfil-enlaces > a > img {
+    width: 1.5em;
+    height: 1.5em;
+    top: 1px;
+  }
+
+  #perfil-enlaces-derecha {
+    justify-content: space-evenly;
+  }
+
+  #header-bottom {
+    font-size: 75%;
+  }
+
+  #grid {
+    font-size: 75%;
+  }
+
+  /* Esto afecta al icono de ayuda. */
+  .subtask > .icon-tray > span > a > img {
+    width: 3em;
+    height: 3em;
+    margin-bottom: -10px;
+  }
+
+  .subtask > .icon-tray > span > img {
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 85%;
+  }
+}

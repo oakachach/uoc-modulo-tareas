@@ -1,0 +1,66 @@
+/* Archivo css con customizaciones generales de la página */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arial";
+  color: var(--azul-oscuro-uoc);
+  height: 150vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--azul-oscuro-uoc);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  min-width: 1.5em;
+  min-height: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  accent-color: var(--azul-oscuro-uoc);
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+a {
+  color: var(--azul-oscuro-uoc);
+}
+
+#contenido {
+  min-width: var(--content-width);
+}

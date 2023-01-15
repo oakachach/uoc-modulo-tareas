@@ -1,0 +1,38 @@
+{
+  "20657": {
+    "id": "20657",
+    "name": "Diseño de experiencia de usuario",
+    "enrolledStudents": 15,
+    "color": "#957DAD"
+  },
+  "20654": {
+    "id": "20654",
+    "name": "Internet y bases de datos",
+    "enrolledStudents": 24,
+    "color": "#E0BBe4"
+  },
+  "20653": {
+    "id": "20653",
+    "name": "Programación creativa",
+    "enrolledStudents": 19,
+    "color": "#645CAA"
+  },
+  "20660": {
+    "id": "20660",
+    "name": "Proyecto 3. Aplicación interactiva",
+    "enrolledStudents": 20,
+    "color": "#D6D8F2"
+  },
+  "20129": {
+    "id": "20129",
+    "name": "Diseño generativo",
+    "enrolledStudents": 25,
+    "color": "#E7CBA9"
+  },
+  "75565": {
+    "id": "75565",
+    "name": "Ingeniería del software",
+    "enrolledStudents": 20,
+    "color": "#7882A4"
+  }
+}

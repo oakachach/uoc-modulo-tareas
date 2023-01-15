@@ -1,0 +1,144 @@
+/* Customizaciones del encabezado de la página */
+
+#background {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  height: 12em;
+  flex-direction: column;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: var(--content-width);
+  align-items: flex-start;
+}
+
+#header-bottom {
+  width: 100vw;
+  height: var(--menu-button-height);
+}
+
+.header-content {
+  width: var(--content-width);
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-button {
+  margin-right: 2px;
+  background-color: grey;
+  width: var(--menu-button-width);
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+  font-size: 90%;
+}
+
+#home {
+  width: var(--home-button-width);
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadro-extra {
+  width: calc(var(--content-width) - (9em * 5 + 5em));
+  background-color: var(--gris-claro-uoc);
+  margin-right: 3px;
+}
+
+.cuadro-exterior {
+  width: calc((100% - var(--content-width)) / 2);
+  background-color: var(--gris-claro-uoc);
+}
+
+#servicio-atencion-perfil {
+  display: flex;
+  flex-direction: row;
+}
+
+#servicio-atencion {
+  display: flex;
+  flex-direction: row;
+  border-top: 4px solid var(--azul-claro-uoc);
+  margin-right: 0.5em;
+  font-size: 90%;
+  max-width: 8em;
+  text-align: left;
+}
+
+#perfil {
+  display: flex;
+  flex-direction: row;
+  border-top: 4px solid var(--azul-oscuro-uoc);
+  padding-top: 0.5em;
+  font-size: 90%;
+}
+
+#perfil-nombre > p {
+  margin-bottom: 1em;
+}
+
+#perfil-enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -0.5em;
+}
+
+#perfil-enlaces-derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#perfil-enlaces-derecha > * {
+  margin-right: 0.5em;
+}
+
+#header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#foto-perfil {
+  width: 3.5em;
+  height: 4em;
+  background-color: white;
+  border: 1px solid grey;
+  margin-right: 0.5em;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+#servicio-atencion > img {
+  width: 50px;
+  height: 50px;
+  margin-left: -10px;
+  margin-right: -5px;
+}
+
+.perfil-enlaces-derecha-elemento {
+  display: flex;
+  flex-direction: row;
+}

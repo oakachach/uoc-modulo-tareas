@@ -1,0 +1,22 @@
+/* Media query para cuando la pantalla mida menos de 1180px */
+
+@media screen and (max-width: 1180px) {
+  :root {
+    --content-width: 800px;
+    --home-button-width: 5rem;
+    --menu-button-width: 9rem;
+    --menu-button-height: 5rem;
+  }
+
+  header {
+    width: 98%;
+  }
+  #tareas-asignaturas {
+    flex-direction: column-reverse;
+  }
+
+  #seccion-tareas,
+  #seccion-asignaturas {
+    width: 98%;
+  }
+}

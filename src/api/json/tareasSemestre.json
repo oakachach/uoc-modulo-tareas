@@ -1,0 +1,330 @@
+{
+  "task_1": {
+    "id": "task_1",
+    "subjectID": "20660",
+    "subjectName": "Proyecto 3. Aplicación interactiva",
+    "taskName": "Presentamos el proyecto ante el público general",
+    "date": "2023-01-04T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.05,
+    "workingRate": 0.95,
+    "estimatedHours": 26,
+    "subtasks": [
+      {
+        "id": "task_1_1",
+        "taskID": "task_1",
+        "name": "Planifica la presentación de tu proyecto, seleccionando los puntos y características más importantes",
+        "date": "2022-12-11T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 2
+      },
+      {
+        "id": "task_1_2",
+        "taskID": "task_1",
+        "name": "Escoge el medio/s que te parezcan más apropiados en función del proyecto",
+        "date": "2022-12-15T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 1
+      },
+      {
+        "id": "task_1_3",
+        "taskID": "task_1",
+        "name": "Desarrolla los medios de presentación",
+        "date": "2022-12-30T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 20
+      },
+      {
+        "id": "task_1_4",
+        "taskID": "task_1",
+        "name": "Prepara un breve resumen de su memoria",
+        "date": "2023-01-01T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 3
+      }
+    ]
+  },
+  "task_2": {
+    "id": "task_2",
+    "subjectID": "20657",
+    "subjectName": "Diseño de experiencia de usuario",
+    "taskName": "Test de usabilidad e informe final de evaluación",
+    "date": "2023-01-16T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.06,
+    "workingRate": 0.93,
+    "estimatedHours": 26,
+    "subtasks": [
+      {
+        "id": "task_2_1",
+        "taskID": "task_2",
+        "name": "Realizar test de usabilidad presencial o virtual de acuerdo con lo planteado en la PEC3 a 3 usuarios potenciales del producto interactivo elegido",
+        "date": "2023-01-06T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.06,
+        "workingRate": 0.93,
+        "estimatedHours": 20
+      },
+      {
+        "id": "task_2_2",
+        "taskID": "task_2",
+        "name": "Realizar vídeo de 5 minutos con los cortes más relevantes de las 3 pruebas",
+        "date": "2023-01-08T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.06,
+        "workingRate": 0.93,
+        "estimatedHours": 2
+      },
+      {
+        "id": "task_2_3",
+        "taskID": "task_2",
+        "name": "Realizar un informe sobre los principales problemas de usabilidad identificados después e hacer el test con los usuarios",
+        "date": "2023-01-10T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.06,
+        "workingRate": 0.93,
+        "estimatedHours": 2
+      },
+      {
+        "id": "task_2_4",
+        "taskID": "task_2",
+        "name": "Realizar una comparación con el análisis heurístico",
+        "date": "2023-01-12T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.06,
+        "workingRate": 0.93,
+        "estimatedHours": 2
+      },
+      {
+        "id": "task_2_5",
+        "taskID": "task_2",
+        "name": "Maquetado de la memoria",
+        "date": "2023-01-14T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.06,
+        "workingRate": 0.93,
+        "estimatedHours": 2
+      }
+    ]
+  },
+  "task_3": {
+    "id": "task_3",
+    "subjectID": "20654",
+    "subjectName": "Internet y bases de datos",
+    "taskName": "Presentación del Reto final: ¡Cerramos el proyecto, lo presentamos y lo difundimos!",
+    "date": "2023-01-15T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.04,
+    "workingRate": 0.95,
+    "estimatedHours": 18,
+    "subtasks": [
+      {
+        "id": "task_3_1",
+        "taskID": "task_3",
+        "name": "Cierre del proyecto en el sitio web del grupo",
+        "date": "2023-01-02T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.95,
+        "estimatedHours": 5
+      },
+      {
+        "id": "task_3_2",
+        "taskID": "task_3",
+        "name": "Difusión en el aula del proyecto y de la presentación elaborada",
+        "date": "2023-01-06T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.95,
+        "estimatedHours": 10
+      },
+      {
+        "id": "task_3_3",
+        "taskID": "task_3",
+        "name": "Lectura y valoración del proyecto de otro grupo",
+        "date": "2023-01-10T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.95,
+        "estimatedHours": 1
+      },
+      {
+        "id": "task_3_4",
+        "taskID": "task_3",
+        "name": "Defensa del proyecto",
+        "date": "2023-01-14T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.95,
+        "estimatedHours": 1
+      },
+      {
+        "id": "task_3_5",
+        "taskID": "task_3",
+        "name": "Valoración final del trabajo en equipo",
+        "date": "2023-01-14T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.95,
+        "estimatedHours": 1
+      }
+    ]
+  },
+  "task_4": {
+    "id": "task_4",
+    "subjectID": "20653",
+    "subjectName": "Programación creativa",
+    "taskName": "Práctica final",
+    "date": "2023-01-23T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.05,
+    "workingRate": 0.94,
+    "estimatedHours": 24,
+    "subtasks": [
+      {
+        "id": "task_4_1",
+        "taskID": "task_4",
+        "name": "Pensar en una pieza a desarrollar",
+        "date": "2023-01-07T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.94,
+        "estimatedHours": 1
+      },
+      {
+        "id": "task_4_2",
+        "taskID": "task_4",
+        "name": "Desglosar sus elementos y el funcionamiento general",
+        "date": "2023-01-09T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.94,
+        "estimatedHours": 2
+      },
+      {
+        "id": "task_4_3",
+        "taskID": "task_4",
+        "name": "Pensar en cómo debemos escribir el código para hacer nuestra idea realidad",
+        "date": "2023-01-19T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.94,
+        "estimatedHours": 20
+      },
+      {
+        "id": "task_4_4",
+        "taskID": "task_4",
+        "name": "Comentar las acciones que realizamos en el código",
+        "date": "2023-01-21T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.94,
+        "estimatedHours": 1
+      }
+    ]
+  },
+  "task_5": {
+    "id": "task_5",
+    "subjectID": "20129",
+    "subjectName": "Diseño generativo",
+    "taskName": "Proyecto",
+    "date": "2023-01-22T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.04,
+    "workingRate": 0.96,
+    "estimatedHours": 32,
+    "subtasks": [
+      {
+        "id": "task_5_1",
+        "taskID": "task_5",
+        "name": "Realizar un briefing ficticio",
+        "date": "2023-01-02T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.96,
+        "estimatedHours": 4
+      },
+      {
+        "id": "task_5_2",
+        "taskID": "task_5",
+        "name": "Desarrollar una propuesta que responda a las necesidades del briefing",
+        "date": "2023-01-07T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.96,
+        "estimatedHours": 10
+      },
+      {
+        "id": "task_5_3",
+        "taskID": "task_5",
+        "name": "Desarrollar los materiales gráficos y el código necesarios para resolver la propuesta",
+        "date": "2023-01-17T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.96,
+        "estimatedHours": 15
+      },
+      {
+        "id": "task_5_4",
+        "taskID": "task_5",
+        "name": "Redactado de la memoria",
+        "date": "2023-01-19T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.04,
+        "workingRate": 0.96,
+        "estimatedHours": 3
+      }
+    ]
+  },
+  "task_6": {
+    "id": "task_6",
+    "subjectID": "75565",
+    "subjectName": "Ingeniería del software",
+    "taskName": "Análisis UML",
+    "date": "2022-12-30T00:00:00.000+01:00",
+    "status": "pending",
+    "successRate": 0.05,
+    "workingRate": 0.95,
+    "estimatedHours": 27,
+    "subtasks": [
+      {
+        "id": "task_6_1",
+        "taskID": "task_6",
+        "name": "Lectura del módulo 4",
+        "date": "2022-12-05T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 12
+      },
+      {
+        "id": "task_6_2",
+        "taskID": "task_6",
+        "name": "Realizar ejercicios complementarios",
+        "date": "2022-12-14T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 5
+      },
+      {
+        "id": "task_6_3",
+        "taskID": "task_6",
+        "name": "Realizar ejercicios del cuestionario",
+        "date": "2022-12-26T00:00:00.000+01:00",
+        "status": "pending",
+        "successRate": 0.05,
+        "workingRate": 0.95,
+        "estimatedHours": 10
+      }
+    ]
+  }
+}
